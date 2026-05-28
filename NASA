@@ -1,0 +1,10 @@
+import requests
+
+HOST = "http://localhost:8090"
+
+requests.post(
+    f"{HOST}/api/main/time",
+    data={"timerate": 200}
+)
+
+print("Time acceleration enabled")
